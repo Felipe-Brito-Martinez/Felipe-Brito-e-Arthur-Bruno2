@@ -1,0 +1,138 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #300606;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 24px;
+    color: #323394;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+}
+.exemplo {
+    color: darkred;
+}
+
+#exemplo-id {
+    color: darkblue;
+}
+
+.box-example {
+    border: 10px solid #333;
+    padding: 40px;
+    margin: 70px;
+    background-color: lightgray;
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+}
+.search-bar {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.search-bar button:hover {
+    background-color: #58ff37;
+}
+.buttons .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca os itens em coluna para melhor exibição em telas menores */
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px; /* Reduz o tamanho da fonte do logo em telas menores */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0; /* Coloca os itens de navegação em linha para ocupar menos espaço */
+    }
+
+    .search-bar input[type="text"] {
+        width: 80%; /* Aumenta a largura do campo de entrada para melhor usabilidade em telas menores */
+    }
+
+    .box-example {
+        width: 100%; /* Ajusta a largura da caixa para ocupar o espaço disponível */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 90%;
+    }
+
+    .search-bar button {
+        font-size: 14px;
+        padding: 6px 12px; /* Ajusta o botão para caber em telas muito pequenas */
+    }
+}

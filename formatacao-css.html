@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+
+        img {
+            border-style: solid;
+        }
+
+        section h2 p {
+            color: red;
+        }
+
+        section p {
+            font-size: large;
+        }
+
+        .esquerda {
+            text-align: left;
+            color: green;
+        }
+
+        .direita {
+            text-align: right;
+            color: blue;
+        }
+
+        .centro {
+            text-align: center;
+            color: purple;
+        }
+
+        p b {
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Portfólio do Desenvolvedor</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="button">Buscar</button>
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="btn">Início</a>
+            <a href="estilos-em-cascata.html" class="btn">Estilos em Cascata</a>
+            <a href="formatacao-css.html" class="btn"> Formatação CSS</a>
+            <a href="box-model.html" class="btn">Box Model</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <big>
+            <center>
+                <h1>O que é css ?</h1>
+                <p>CSS é uma linguagem baseada em regras. — Você define regras especificando grupos de estilo que devem ser
+                 aplicados para elementos particulares ou grupos de elementos na sua página web. <br></p>
+            <h2>Exemplos de Formatação</h2>
+            <img src="Captura de Tela (5).png" alt="">
+            <p style="color: blue; font-size: 18px;">Este texto está formatado com uma cor azul e tamanho de fonte de 18px.</p>
+            
+            <p style="text-align: center; line-height: 1.5;">Este texto está centralizado e com espaçamento entre linhas ajustado.</p>
+            
+            <section id="fonte em vermelho">
+
+                <h2>O estilo de Fonte em Vermelho Fica asssim</h2>
+                <h2>
+                    <p>Estilo de fonte em vermelho </p>
+                </h2>
+                <h2>O codigo usado para isso foi:</h2>
+                <p><b>''color: red;''</b></p>
+        
+            </section>
+  
+            <section id="fonte larga">
+                <h2>O estilo de Fonte larga fica assim</h2>
+                <p>Texto largo </p>
+                <h2>O codigo usado para isso foi:</h2>
+                <p><b>''font-size: largue;</b></p>
+            </section>
+          
+            <section id="esquerdo">
+                <h2>O estilo de Fonte para a Esquerda fica assim</h2>
+                <p class="esquerda"> Texto alinhado para a esquerda. </p>
+                <h2>O codigo usado para em CSS isso foi:</h2>
+                <p><b>.esquerda {
+                    text-align: left;
+                    color: green;
+                }</b></p>
+        
+            </section>
+            
+            <section id="direito">
+                <h2>O estilo de Fonte para a Direita fica assim</h2>
+                <p class="direita"> Texto alinhado para a direita. </p>
+                <h2>O codigo usado para em CSS isso foi:</h2>
+                <p><b>
+                    text-align: right;
+                    color: blue;
+                }</b></p>
+            </section>
+           
+            <section id="centro">
+                <h2>O estilo de Fonte para o Centro fica assim</h2>
+                <p class="centro"> Texto alinhado no centro. </p>
+                <h2>O codigo usado para em CSS isso foi:</h2>
+                <p><b>text-align: center;
+                    color: purple;
+                }</b></p>
+            </section>
+
+            <br><br><br><br><br><br><br><br><br>
+        </center>
+        </big>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Desenvolvedor Web. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
